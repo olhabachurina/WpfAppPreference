@@ -1,0 +1,41 @@
+﻿<Window x:Class="WpfAppPreference.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppPreference"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <GroupBox Header="Цвета">
+                <StackPanel>
+                    <RadioButton Name="redRadioButton" Content="Красный"/>
+                    <RadioButton Name="blueRadioButton" Content="Синий"/>
+                    <RadioButton Name="greenRadioButton" Content="Зеленый"/>
+                </StackPanel>
+            </GroupBox>
+
+            <GroupBox Header="Музыка">
+                <StackPanel>
+                    <RadioButton Name="rockRadioButton" Content="Рок"/>
+                    <RadioButton Name="popRadioButton" Content="Поп"/>
+                    <RadioButton Name="jazzRadioButton" Content="Джаз"/>
+                </StackPanel>
+            </GroupBox>
+
+            <GroupBox Header="Еда">
+                <StackPanel>
+                    <RadioButton Name="pizzaRadioButton" Content="Пицца"/>
+                    <RadioButton Name="sushiRadioButton" Content="Суши"/>
+                    <RadioButton Name="burgerRadioButton" Content="Бургер"/>
+                </StackPanel>
+            </GroupBox>
+
+            <Button Name="showPreferencesButton" Content="Отобразить предпочтения" Click="ShowPreferencesButton_Click"/>
+            <Button Name="clearSelectionButton" Content="Очистить выбор" Click="ClearSelectionButton_Click"/>
+
+            <TextBlock Name="selectedPreferencesTextBlock" Margin="10" VerticalAlignment="Bottom" />
+        </StackPanel>
+    </Grid>
+</Window>
